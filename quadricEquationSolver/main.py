@@ -13,15 +13,27 @@ b = getOngetOnlyNumlyNum('B')
 c = getOngetOnlyNumlyNum('C')
 
 if a ==0:
-    print('This is not Quadric Formula')
-    b = 0
-    c = 0
-    a = 1
-x1 = (-b+sqrt(b**2-4*a*c))/(2*a)
-x2 = (-b-sqrt(b**2-4*a*c))/(2*a)
-print("x1 = "+str(x1))
-print("x2 = "+str(x2))
+    print("What the what?? This is not a quadratic equation.")
+    if b==0:
+        print("There is no x")
+    else:
+        x1=-b/c
+    print("x1 = "+str(x1))
+else:
+    if b**2-4*a*c<0:
+        print("No Real Roots")
+    else:
+        x1=(-b+sqrt(b**2-4*a*c))/(2*a)
+        x2=(-b-sqrt(b**2-4*a*c))/(2*a)
+        print("x1 = "+str(x1))
+        print("x2 = "+str(x2))
+# x1 = (-b+sqrt(b**2-4*a*c))/(2*a)
+# x2 = (-b-sqrt(b**2-4*a*c))/(2*a)
 
+
+
+# print("x1 = "+str(x1))
+# print("x2 = "+str(x2))
 
 
 
